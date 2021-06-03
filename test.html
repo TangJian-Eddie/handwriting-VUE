@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>vue</title>
+    <script src="./vue.js"></script>
+  </head>
+</html>
+<body>
+  <div id="app">
+    {{name}}
+    <div>{{message}}</div>
+    <input v-model='test'/>
+    {{test}}
+  </div>
+</body>
+<script>
+  let vm = new Vue({
+	el: '#app',
+	data: {
+		name: 'lili',
+    message: '测试数据',
+    test: ''
+	}
+})
+
+</script>
